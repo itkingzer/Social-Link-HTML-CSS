@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+  <div class="profile">
+    <img src="assets/images/avatar-jessica.jpeg" alt="">
+  </div>
+  <div class="Title">
+    <h1>Jessica Randall</h1>
+    <div class="address">London , United Kingdom</div>
+    <div class="Job">"Font-end Developer and reader"</div>
+  </div>
+  <div class="social">
+    <ul>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="https://frontendmentor.io" target="_blank">Fontend Mentor</a></li>
+      <li><a href="https://linkedin.com" target="_blank">Linkedin</a></li>
+      <li><a href="https://twitter.com" target="_bank">Twitter</a></li>
+      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+    </ul>
+  </div>
+ </div>
+</body>
+  <script>
+    document.querySelectorAll('li').forEach(function(li) {
+        li.addEventListener('click', function() {
+            const link = li.querySelector('a').href;
+            window.open(link, '_blank');
+        });
+    });
+  </script>
+</html>
