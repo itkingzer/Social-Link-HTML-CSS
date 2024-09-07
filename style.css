@@ -80,6 +80,7 @@ li:hover a{
 
 @media (max-width: 375px) {
     .container {
+        margin: 10px;
         width: 80%; 
         padding: 20px;
     }
